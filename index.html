@@ -2,30 +2,97 @@
 <html>
 <head>
   <title>F & J </title>
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" content="F & J" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="app.js" type="text/javascript"></script>
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Cuprum|Oswald" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css">
+
 </head>
 <body>
-  <div class="navbar">
+  <div id="app">
+    <div class="navbar">
 
-    <a href="#">Item</a>
-    <a href="#">Item</a>
-    <a href="#">Item</a>
-    <div class="small-logo-container">
-      <h1 class="small-logo">
-        <img src="images/Image006.png" id="logo_small"/>
-      </h1>
+        <div class="small_logo_container">
+          <div class="small_logo">
+            <img src="images/Image006.png" id="logo_small"/>
+          </div>
+        </div>
+
+        <div id= "menu_icon">
+          <span class="glyphicon glyphicon-menu-hamburger btn-lg"></span>
+        </div>
+
+        <div id="menu">
+          <div class="menuItem" v-scroll-to="'#about'">about</div>
+          <div class="menuItem" v-scroll-to="'#services'">services</div>
+          <div class="menuItem" v-scroll-to="'#work'">our work</div>
+          <div class="menuItem" v-scroll-to="'#contact'">contact</div>
+        </div>
+
+    <!--     <div id="menu_collapsed">
+          <a class="collapsed" href="#about">about</a>
+          <a class="collapsed" href="#contact">contact</a>
+          <a class="collapsed" href="#services">services</a>
+        </div> -->
+
+
     </div>
-  </div>
-  <div class="content">
+    <div id="cover">
 
-    <h1 class="jumbotron big-logo">
-      <img src="images/Image006.png" id="logo"/>
-    </h1>
+      <div class="banner">
 
+        <div class="bannerImage">
 
-    <div class="filler">
+            <img src="images/Image006.png" id="logo"/>
+
+            <h1>
+            Turning houses into homes for over 20 years
+            </h1>
+
+          </div>
+        </div>
+
+          <div id="descriptionContainer">
+
+            <div id="descriptionItem1" class="descriptionItem">
+              <div id="circle1" class="circle">
+                <img src="images/homeInHand.png"/>
+                <div>Over 20 years of trusted experience</div>
+              </div>
+            </div>
+
+            <div id="descriptionItem2" class="descriptionItem">
+              <div id="circle2" class="circle">
+                <img src="images/design.png"/>
+                <div>Quality, customized design</div>
+              </div>
+            </div>
+
+            <div id="descriptionItem3" class="descriptionItem">
+              <div id="circle3" class="circle">
+                <img src="images/award.jpeg"/>
+                <div>Voted one of best of Bucks</div>
+              </div>
+            </div>
+
+            <div id="descriptionItem4" class="descriptionItem">
+              <div id="circle4" class="circle">
+                <img src="images/award.jpeg"/>
+                <div>Voted one of best of Bucks</div>
+              </div>
+            </div>
+
+          </div>
+    </div>
+
+    <div class="sectionTitle" id="about"><h1>about</h1></div>
+    <div class="section">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id maxime repellat repellendus porro voluptas laudantium similique eveniet quis perferendis beatae commodi sunt ullam provident dolorum doloribus esse accusamus dolores. Corrupti.</p>
       <p>Consectetur incidunt voluptatibus ipsa nisi esse eos deleniti repudiandae at quo sit praesentium nemo optio perspiciatis sequi quaerat voluptates minus reprehenderit doloremque accusamus et quisquam nesciunt sunt consequatur explicabo excepturi!</p>
       <p>Sequi facilis ea dolor asperiores quibusdam eveniet optio corporis et accusantium voluptatem architecto quis iste recusandae molestias dolorem soluta ex blanditiis illo impedit laborum iusto? Iure sapiente eos molestiae est?</p>
@@ -38,18 +105,120 @@
       <p>Esse veritatis inventore explicabo hic consequuntur ex autem praesentium quaerat blanditiis illo deleniti dolorum porro tenetur. Repellat sed repellendus natus cum molestias numquam vitae vel eum voluptatem praesentium tempora quae.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nostrum consequatur odit eius blanditiis sit mollitia ut porro cumque nam repudiandae accusantium nisi excepturi corporis incidunt inventore ipsam? Officiis eum!</p>
       <p>Nostrum minus dicta quod totam autem ipsum illo velit labore obcaecati est ducimus ullam sit iusto ea pariatur sint nulla perferendis modi dolorum cumque non laboriosam ratione maiores possimus numquam!</p>
+    </div>
+
+
+    <div class="sectionTitle" id="services"><h1>Services</h1></div>
+    <div class="section">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id maxime repellat repellendus porro voluptas laudantium similique eveniet quis perferendis beatae commodi sunt ullam provident dolorum doloribus esse accusamus dolores. Corrupti.</p>
+      <p>Consectetur incidunt voluptatibus ipsa nisi esse eos deleniti repudiandae at quo sit praesentium nemo optio perspiciatis sequi quaerat voluptates minus reprehenderit doloremque accusamus et quisquam nesciunt sunt consequatur explicabo excepturi!</p>
+      <p>Sequi facilis ea dolor asperiores quibusdam eveniet optio corporis et accusantium voluptatem architecto quis iste recusandae molestias dolorem soluta ex blanditiis illo impedit laborum iusto? Iure sapiente eos molestiae est?</p>
+      <p>Numquam delectus recusandae nesciunt rem itaque harum corporis maxime hic iste molestias adipisci excepturi ullam libero necessitatibus cum eum modi minus obcaecati est nemo quia velit earum perferendis consectetur porro?</p>
+      <p>Accusamus dicta consequatur quos ipsum rerum tempora assumenda ex excepturi itaque soluta magnam debitis voluptatibus neque eos porro. Neque tempora ea beatae delectus facere quas voluptas accusamus maxime enim consequuntur.</p>
+      <p>Saepe obcaecati facilis dolore numquam nam quod laudantium. Rerum esse voluptas eum aut porro beatae adipisci exercitationem ab voluptatum corporis quas placeat sapiente nisi ut officia eaque debitis. Corrupti eveniet!</p>
+      <p>Eius natus numquam tempore alias ipsam commodi aut similique corporis beatae velit maxime obcaecati voluptatibus cum repudiandae minus inventore doloremque optio saepe nihil eum reprehenderit quas consequuntur perspiciatis quo quam.</p>
+      <p>Ea perspiciatis incidunt unde ipsam cupiditate necessitatibus magnam quod odit. Beatae adipisci non praesentium tenetur dolores fugit repellat consequuntur unde aperiam eligendi ipsa doloribus corporis officiis ipsam quod numquam assumenda!</p>
+      <p>Ullam ut ex cum corporis numquam quia hic aut nisi itaque laboriosam eaque earum commodi nulla magni voluptate reiciendis laborum esse odit blanditiis aperiam veniam eos velit similique eveniet ad.</p>
+      <p>Esse veritatis inventore explicabo hic consequuntur ex autem praesentium quaerat blanditiis illo deleniti dolorum porro tenetur. Repellat sed repellendus natus cum molestias numquam vitae vel eum voluptatem praesentium tempora quae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nostrum consequatur odit eius blanditiis sit mollitia ut porro cumque nam repudiandae accusantium nisi excepturi corporis incidunt inventore ipsam? Officiis eum!</p>
+      <p>Nostrum minus dicta quod totam autem ipsum illo velit labore obcaecati est ducimus ullam sit iusto ea pariatur sint nulla perferendis modi dolorum cumque non laboriosam ratione maiores possimus numquam!</p>
+    </div>
+
+    <div class="sectionTitle" id="work"><h1>Our Work</h1></div>
+    <div class="section">
+      <!-- <div v-for="project in projects">{{project.neighborhoodName}}</div> -->
+  <!--         <div v-for="house in houses">
+          <div class="neighborhood">{{house.data.neighborhood[0].text}}</div>
+          <div class="address">{{house.data.address[0].text}}</div>
+          <div class="description">{{house.data.description[0].text}}</div>
+          <div class="rooms">{{house.data.rooms}}</div>
+          <div class="houseImages">
+            <div v-for="item in house.data.images">
+              <img :src="item.image.url"/>
+            </div>
+          </div>
+        </div> -->
+        <div id="neighborhoodContent">
+
+          <div id="neighborhoodAddressContainer">
+
+            <div class="neighborhoodContainer">
+              <div v-for="item in neighborhoods" class="neighborhoodButton" :class="{selectedNeighborhoodButton: item === selectedNeighborhood}">
+                <div v-on:click="changeNeighborhood(item, $event)">
+                  {{item.neighborhood}}
+                </div>
+              </div>
+            </div>
+
+            <transition name="popup">
+            <div class="addressContainer" v-if="showAddress" v-bind:style="{marginTop: neighborhoodContainerTop + 'px', marginLeft: neighborhoodContainerLeft + 'px'}">
+              <div v-for="house in selectedNeighborhood.houses" v-on:click="selectedHouse = house, showHouse = true, currentImage = 0" class="houseButton" :class="{selectedHouseButton: house === selectedHouse}">
+                {{house.address}}
+              </div>
+            </div>
+            </transition>
+
+          </div>
+
+          <transition name="popup">
+          <div v-if="showHouse" class="houseContainer">
+            <div> <h2>{{selectedHouse.address}}</h2></div>
+            <div>
+              <div class="houseInfoContainer">
+                <div class="houseInfo">
+                  Rooms: {{selectedHouse.rooms}}
+                </div>
+                <div class="houseInfo">
+                  Bathrooms: {{selectedHouse.bathrooms}}
+                </div>
+                <div class="houseInfo">
+                  description: {{selectedHouse.description}}
+                </div>
+              </div>
+              <div class="imageViewer">
+                <div class="arrowContainer">
+                  <div class="inactiveArrow" v-if="currentImage <= 0"><</div>
+                  <div class="activeArrowLeft" v-if="currentImage > 0" @click="currentImage--"><</div>
+                </div>
+
+                <div v-if="index === currentImage" class="imageContainer" v-for="(item, index) in selectedHouse.images">
+                  <img :src="item.image.url" width="400px" />
+                </div>
+
+                <div class="arrowContainer">
+                  <div class="inactiveArrow" v-if="currentImage >= selectedHouse.images.length - 1">></div>
+                  <div class="activeArrowRight" v-if="currentImage < selectedHouse.images.length - 1" @click="currentImage++">></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </transition>
+
+        </div>
+
 
     </div>
+
+    <div id="contact" class="section"><a href="contact"></a>
+      <h1>Contact</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id maxime repellat repellendus porro voluptas laudantium similique eveniet quis perferendis beatae commodi sunt ullam provident dolorum doloribus esse accusamus dolores. Corrupti.</p>
+      <p>Consectetur incidunt voluptatibus ipsa nisi esse eos deleniti repudiandae at quo sit praesentium nemo optio perspiciatis sequi quaerat voluptates minus reprehenderit doloremque accusamus et quisquam nesciunt sunt consequatur explicabo excepturi!</p>
+      <p>Sequi facilis ea dolor asperiores quibusdam eveniet optio corporis et accusantium voluptatem architecto quis iste recusandae molestias dolorem soluta ex blanditiis illo impedit laborum iusto? Iure sapiente eos molestiae est?</p>
+      <p>Numquam delectus recusandae nesciunt rem itaque harum corporis maxime hic iste molestias adipisci excepturi ullam libero necessitatibus cum eum modi minus obcaecati est nemo quia velit earum perferendis consectetur porro?</p>
+      <p>Accusamus dicta consequatur quos ipsum rerum tempora assumenda ex excepturi itaque soluta magnam debitis voluptatibus neque eos porro. Neque tempora ea beatae delectus facere quas voluptas accusamus maxime enim consequuntur.</p>
+      <p>Saepe obcaecati facilis dolore numquam nam quod laudantium. Rerum esse voluptas eum aut porro beatae adipisci exercitationem ab voluptatum corporis quas placeat sapiente nisi ut officia eaque debitis. Corrupti eveniet!</p>
+      <p>Eius natus numquam tempore alias ipsam commodi aut similique corporis beatae velit maxime obcaecati voluptatibus cum repudiandae minus inventore doloremque optio saepe nihil eum reprehenderit quas consequuntur perspiciatis quo quam.</p>
+      <p>Ea perspiciatis incidunt unde ipsam cupiditate necessitatibus magnam quod odit. Beatae adipisci non praesentium tenetur dolores fugit repellat consequuntur unde aperiam eligendi ipsa doloribus corporis officiis ipsam quod numquam assumenda!</p>
+      <p>Ullam ut ex cum corporis numquam quia hic aut nisi itaque laboriosam eaque earum commodi nulla magni voluptate reiciendis laborum esse odit blanditiis aperiam veniam eos velit similique eveniet ad.</p>
+      <p>Esse veritatis inventore explicabo hic consequuntur ex autem praesentium quaerat blanditiis illo deleniti dolorum porro tenetur. Repellat sed repellendus natus cum molestias numquam vitae vel eum voluptatem praesentium tempora quae.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nostrum consequatur odit eius blanditiis sit mollitia ut porro cumque nam repudiandae accusantium nisi excepturi corporis incidunt inventore ipsam? Officiis eum!</p>
+      <p>Nostrum minus dicta quod totam autem ipsum illo velit labore obcaecati est ducimus ullam sit iusto ea pariatur sint nulla perferendis modi dolorum cumque non laboriosam ratione maiores possimus numquam!</p>
+    </div>
+
   </div>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="data.js" type="text/javascript"></script>
 
-
-
-
-  <div id="bestOfBucks">
-    <img src="images/2013.jpeg"/>
-    <img src="images/2014.jpeg"/>
-    <img src="images/2015.png"/>
-  </div>
-
+  <script src="bundle.js" type="text/javascript"></script>
 </body>
 </html>
