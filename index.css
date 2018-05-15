@@ -24,6 +24,10 @@ body{
   height: calc(100vh - 300px);*/
 }
 
+.bannerImage > h1{
+  font-size: 3vw;
+}
+
 
 #logo{
   /*width:300px;
@@ -231,6 +235,13 @@ img{
   align-items: center;
   justify-content: space-around;
 
+}
+
+.descriptionDiv{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .descriptionItem{
@@ -443,15 +454,29 @@ img{
 .imageViewer{
   display: inline-block;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imageContainer{
+  max-width: 400px;
+  margin: 0 auto;
   float: left;
-  width: 400px;
-  height: 271px;
 }
 .imageContainer > img{
   width: 100%;
+}
+
+.arrowContainerSmall{
+  display: none;
+  width: 100%;
+  color: #2E3343;
+  font-size: 50px;
+  text-align: center;
+  cursor: pointer;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .arrowContainer{
@@ -464,11 +489,11 @@ img{
 }
 
 .activeArrowLeft:hover{
-  padding-right: 10px;
+  font-weight: bold;
 }
 
 .activeArrowRight:hover{
-  padding-left: 10px;
+  font-weight: bold;
 }
 
 .inactiveArrow{
@@ -513,6 +538,27 @@ img{
   }
 }
 
+@media screen and (max-width: 840px)   {
+  .circle{
+    width: 150px;
+    height: 150px;
+  }
+  .circle > img{
+    width: 60px;
+  }
+  .circle > div {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .descriptionDiv{
+    margin-top: 20px;
+  }
+  .descriptionItem{
+    width: 150px;
+    height: 150px;
+  }
+}
+
 /*phone styles*/
 @media screen and (max-width: 767px)   {
   #cover{
@@ -532,11 +578,47 @@ img{
     padding: 4px;
     font-size: 10px;
   }
+  .descriptionDiv{
+    margin-top: 20px;
+  }
   .descriptionItem{
     width: 100px;
     height: 100px;
   }
-/*  #descriptionContainer{
-    flex-direction: column;
-  }*/
+
+  .section{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .houseContainer{
+    padding-left: 0;
+  }
+  .imageContainer{
+    float: none;
+  }
+  .imageViewer{
+    display: inline-block;
+    width: 100%;
+  }
+  .arrowContainerSmall{
+    display: inline-block;
+  }
+  .arrowContainer{
+    display: none;
+  }
+  .activeArrowLeft{
+    float: left;
+  }
+  .activeArrowRight{
+    float: right;
+  }
+
+}
+@media screen and (max-width: 450px)   {
+  #descriptionContainer{
+    display: block;
+  }
+  .descriptionDiv{
+    width: 100%;
+  }
 }
